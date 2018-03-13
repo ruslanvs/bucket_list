@@ -44,21 +44,38 @@ class BucketListViewController: UITableViewController, AddItemTableViewControlle
         items.remove( at: indexPath.row )
         tableView.reloadData()
     }
-    
+    // NO TEST
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        if segue.identifier == "AddItemSegue" {
+
+        if let s = sender as? UIBarButtonItem {
             let navigationController = segue.destination as! UINavigationController
             let addItemTableViewController = navigationController.topViewController as! AddItemTableViewController
             addItemTableViewController.delegate = self
-        } else if segue.identifier == "EditItemSegue" {
+        } else if let s = sender as? NSIndexPath {
             let navigationController = segue.destination as! UINavigationController
             let addItemTableViewController = navigationController.topViewController as! AddItemTableViewController
             addItemTableViewController.delegate = self
+            
             let indexPath = sender as! NSIndexPath
             let item = items[indexPath.row]
             addItemTableViewController.item = item
             addItemTableViewController.indexPath = indexPath
         }
+        
+        // if segue.identifier == "AddItemSegue" {
+        //     let navigationController = segue.destination as! UINavigationController
+        //     let addItemTableViewController = navigationController.topViewController as! AddItemTableViewController
+        //     addItemTableViewController.delegate = self
+        // } else if segue.identifier == "EditItemSegue" {
+        //     let navigationController = segue.destination as! UINavigationController
+        //     let addItemTableViewController = navigationController.topViewController as! AddItemTableViewController
+        //     addItemTableViewController.delegate = self
+            
+        //     let indexPath = sender as! NSIndexPath
+        //     let item = items[indexPath.row]
+        //     addItemTableViewController.item = item
+        //     addItemTableViewController.indexPath = indexPath
+        // }
     }
         
     func cancelButtonPressed(by controller: AddItemTableViewController) {
