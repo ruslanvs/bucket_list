@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A647377420581A1B003825B4 /* AddItemTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A647377320581A1B003825B4 /* AddItemTableViewController.swift */; };
+		A6473778205825E6003825B4 /* AddItemTableViewControllerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6473777205825E6003825B4 /* AddItemTableViewControllerDelegate.swift */; };
 		A6B65D0820575A6E0004F5DF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6B65D0720575A6E0004F5DF /* AppDelegate.swift */; };
 		A6B65D0A20575A6E0004F5DF /* BucketListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6B65D0920575A6E0004F5DF /* BucketListViewController.swift */; };
 		A6B65D0D20575A6E0004F5DF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A6B65D0B20575A6E0004F5DF /* Main.storyboard */; };
@@ -34,6 +36,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		A647377320581A1B003825B4 /* AddItemTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddItemTableViewController.swift; sourceTree = "<group>"; };
+		A6473777205825E6003825B4 /* AddItemTableViewControllerDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddItemTableViewControllerDelegate.swift; sourceTree = "<group>"; };
 		A6B65D0420575A6E0004F5DF /* bucket_list.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = bucket_list.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A6B65D0720575A6E0004F5DF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A6B65D0920575A6E0004F5DF /* BucketListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BucketListViewController.swift; sourceTree = "<group>"; };
@@ -97,9 +101,11 @@
 		A6B65D0620575A6E0004F5DF /* bucket_list */ = {
 			isa = PBXGroup;
 			children = (
+				A6473777205825E6003825B4 /* AddItemTableViewControllerDelegate.swift */,
 				A6B65D0720575A6E0004F5DF /* AppDelegate.swift */,
 				A6B65D0920575A6E0004F5DF /* BucketListViewController.swift */,
 				A6B65D0B20575A6E0004F5DF /* Main.storyboard */,
+				A647377320581A1B003825B4 /* AddItemTableViewController.swift */,
 				A6B65D0E20575A6E0004F5DF /* Assets.xcassets */,
 				A6B65D1020575A6E0004F5DF /* LaunchScreen.storyboard */,
 				A6B65D1320575A6E0004F5DF /* Info.plist */,
@@ -261,6 +267,8 @@
 			files = (
 				A6B65D0A20575A6E0004F5DF /* BucketListViewController.swift in Sources */,
 				A6B65D0820575A6E0004F5DF /* AppDelegate.swift in Sources */,
+				A6473778205825E6003825B4 /* AddItemTableViewControllerDelegate.swift in Sources */,
+				A647377420581A1B003825B4 /* AddItemTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
