@@ -16,6 +16,7 @@
 		A6B65D1220575A6E0004F5DF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A6B65D1020575A6E0004F5DF /* LaunchScreen.storyboard */; };
 		A6B65D1D20575A6E0004F5DF /* bucket_listTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6B65D1C20575A6E0004F5DF /* bucket_listTests.swift */; };
 		A6B65D2820575A6E0004F5DF /* bucket_listUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6B65D2720575A6E0004F5DF /* bucket_listUITests.swift */; };
+		A6F8355E20588CAD0061C5A8 /* BucketList.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = A6F8355C20588CAD0061C5A8 /* BucketList.xcdatamodeld */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,7 @@
 		A6B65D2320575A6E0004F5DF /* bucket_listUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = bucket_listUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A6B65D2720575A6E0004F5DF /* bucket_listUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = bucket_listUITests.swift; sourceTree = "<group>"; };
 		A6B65D2920575A6E0004F5DF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A6F8355D20588CAD0061C5A8 /* BucketList.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = BucketList.xcdatamodel; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +83,7 @@
 		A6B65CFB20575A6E0004F5DF = {
 			isa = PBXGroup;
 			children = (
+				A6F8355C20588CAD0061C5A8 /* BucketList.xcdatamodeld */,
 				A6B65D0620575A6E0004F5DF /* bucket_list */,
 				A6B65D1B20575A6E0004F5DF /* bucket_listTests */,
 				A6B65D2620575A6E0004F5DF /* bucket_listUITests */,
@@ -267,6 +270,7 @@
 			files = (
 				A6B65D0A20575A6E0004F5DF /* BucketListViewController.swift in Sources */,
 				A6B65D0820575A6E0004F5DF /* AppDelegate.swift in Sources */,
+				A6F8355E20588CAD0061C5A8 /* BucketList.xcdatamodeld in Sources */,
 				A6473778205825E6003825B4 /* AddItemTableViewControllerDelegate.swift in Sources */,
 				A647377420581A1B003825B4 /* AddItemTableViewController.swift in Sources */,
 			);
@@ -566,6 +570,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		A6F8355C20588CAD0061C5A8 /* BucketList.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				A6F8355D20588CAD0061C5A8 /* BucketList.xcdatamodel */,
+			);
+			currentVersion = A6F8355D20588CAD0061C5A8 /* BucketList.xcdatamodel */;
+			path = BucketList.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = A6B65CFC20575A6E0004F5DF /* Project object */;
 }

@@ -37,21 +37,21 @@ class BucketListViewController: UITableViewController, AddItemTableViewControlle
     }
 
     override func tableView(_ tableView: UITableView, accessoryButtonTappedForRowWith indexPath: IndexPath) {
-        performSegue( withIdentifier: "EditItemSegue", sender: indexPath )
+        performSegue( withIdentifier: "AddItemSegue", sender: indexPath )
     }
     
     override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCellEditingStyle, forRowAt indexPath: IndexPath) {
         items.remove( at: indexPath.row )
         tableView.reloadData()
     }
-    // NO TEST
+
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
 
-        if let s = sender as? UIBarButtonItem {
+        if (sender as? UIBarButtonItem) != nil {
             let navigationController = segue.destination as! UINavigationController
             let addItemTableViewController = navigationController.topViewController as! AddItemTableViewController
             addItemTableViewController.delegate = self
-        } else if let s = sender as? NSIndexPath {
+        } else if (sender as? NSIndexPath) != nil {
             let navigationController = segue.destination as! UINavigationController
             let addItemTableViewController = navigationController.topViewController as! AddItemTableViewController
             addItemTableViewController.delegate = self
@@ -61,21 +61,6 @@ class BucketListViewController: UITableViewController, AddItemTableViewControlle
             addItemTableViewController.item = item
             addItemTableViewController.indexPath = indexPath
         }
-        
-        // if segue.identifier == "AddItemSegue" {
-        //     let navigationController = segue.destination as! UINavigationController
-        //     let addItemTableViewController = navigationController.topViewController as! AddItemTableViewController
-        //     addItemTableViewController.delegate = self
-        // } else if segue.identifier == "EditItemSegue" {
-        //     let navigationController = segue.destination as! UINavigationController
-        //     let addItemTableViewController = navigationController.topViewController as! AddItemTableViewController
-        //     addItemTableViewController.delegate = self
-            
-        //     let indexPath = sender as! NSIndexPath
-        //     let item = items[indexPath.row]
-        //     addItemTableViewController.item = item
-        //     addItemTableViewController.indexPath = indexPath
-        // }
     }
         
     func cancelButtonPressed(by controller: AddItemTableViewController) {
