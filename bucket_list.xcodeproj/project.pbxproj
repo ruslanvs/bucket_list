@@ -83,7 +83,6 @@
 		A6B65CFB20575A6E0004F5DF = {
 			isa = PBXGroup;
 			children = (
-				A6F8355C20588CAD0061C5A8 /* BucketList.xcdatamodeld */,
 				A6B65D0620575A6E0004F5DF /* bucket_list */,
 				A6B65D1B20575A6E0004F5DF /* bucket_listTests */,
 				A6B65D2620575A6E0004F5DF /* bucket_listUITests */,
@@ -104,6 +103,7 @@
 		A6B65D0620575A6E0004F5DF /* bucket_list */ = {
 			isa = PBXGroup;
 			children = (
+				A6F8355C20588CAD0061C5A8 /* BucketList.xcdatamodeld */,
 				A6473777205825E6003825B4 /* AddItemTableViewControllerDelegate.swift */,
 				A6B65D0720575A6E0004F5DF /* AppDelegate.swift */,
 				A6B65D0920575A6E0004F5DF /* BucketListViewController.swift */,
